@@ -1,0 +1,37 @@
+
+# Reddit raw archives
+reddit/
+*.zst
+
+# Processed datasets
+processed/
+
+# Per-post examples (review before publishing)
+results/nmf_topic_examples.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Temporary files
+*.parts
+*.tmp
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Large serialized models
+*.pkl
+*.joblib
