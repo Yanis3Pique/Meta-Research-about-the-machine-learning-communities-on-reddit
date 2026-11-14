@@ -208,6 +208,13 @@ LocalLLaMA has no pre-period → no ITS. Report its topic profile in 2023 vs. 20
 - Learning & career rises sharply in r/learnmachinelearning (+6.8 pp gap; spike in late 2024 — inspect).
 - Emerging vocabulary: *stable diffusion* peaks Aug–Oct 2022 — the generative-AI wave **predates** ChatGPT; *chatgpt* → *gpt4*/*llama* (Mar 2023) → *lora* → *rag* (late 2023–2024) → *ollama*/*gguf* (2024).
 
+**Robustness with BERTopic (14 Nov 2026, scripts 50, 12, 14; GPU server):**
+- Embeddings: Qwen/Qwen3-Embedding-0.6B on all 224,300 titles (6 min on an RTX 5060 Ti). BERTopic fitted on the same balanced 42k sample as NMF: 67 topics → reduced to 40; 50% outliers before reduction, 0% after embedding-based reassignment.
+- Each BERTopic topic is mapped to the NMF family it overlaps most (`a_bertopic_family_map.csv`). Post-level family agreement is only 47%, so the two models draw family boundaries differently (e.g. BERTopic's "ai, chatgpt, chatbot" topic absorbs much of NMF's *generic AI talk*). Caveat: the mapping uses NMF, so the models aren't fully independent; the LLM annotator check (planned) is the independent one.
+- **H1 holds under both models.** The LLM-family jump beats all placebos in all 3 subreddits under both; Dec 2024 gap vs. counterfactual: BERTopic +9.2 / +6.3 / +11.6 pp, NMF +4.7 / +8.1 / +7.8 pp (ML / learnML / DL).
+- Classic DL & vision decline beats placebos under both models in r/ML and r/DL.
+- Model-dependent (don't claim): research, generic, compute, learning & career in r/DL.
+
 ---
 
 ## 3. Angle F — Link sources
@@ -356,6 +363,15 @@ Embedding centroids (from BERTopic's cached embeddings): cosine similarity betwe
 - **H8 supported.** All three move toward r/LocalLLaMA's 2023 profile (τ = −0.47 / −0.60 / −0.85, p ≤ 0.02; JSD ≈ 0.18–0.20 → 0.12–0.16), with the drop concentrated at 2022Q4–2023Q1. Drift from each subreddit's own 2021H1 profile grows 7–10×.
 - **Story:** parallel drift — each community moved in the same direction (toward LLM-native content) while keeping its own identity.
 - Caveats: titles alone separate the subreddits only weakly (F1 0.42), which limits the classifier's sensitivity; the mask list (top-40 terms of the 3 LLM topics) includes generic words (*app, build, code, free*) — tighten it. Fightin' Words (§5.4) not yet done.
+
+**Embedding-based robustness (script 41, Qwen3-Embedding-0.6B):**
+- The embedding classifier is stronger than TF-IDF (macro-F1 ≈ 0.49 vs 0.42). It shows only a very slight decline (pre 0.496, post 0.486; τ = −0.38, p = 0.04).
+- Distances between subreddit centroids: **r/deeplearning moves closer to both others** (ML–DL τ = −0.50, p = 0.006; learnML–DL τ = −0.40, p = 0.03). This persists when LLM-heavy posts (LLM-family weight ≥ 0.3) are excluded. ML–learnML shows no trend.
+- → H7 refined: mild convergence, driven by r/deeplearning losing its distinct identity, and not just shared LLM vocabulary. This is consistent with A, where r/DL's classic DL & vision share fell most.
+- **Size check with Qwen3-Embedding-4B** (2,560 dimensions, 29 min on GPU):
+  - Classifier F1 is slightly higher (≈ 0.50). The small decline remains on all posts (τ = −0.42, p = 0.03) but **disappears when LLM-heavy posts are excluded** (τ = −0.07, p = 0.76), so that classifier signal is LLM-driven.
+  - **ML–DL convergence holds with both models and without LLM-heavy posts** (4B: τ = −0.47 all posts, −0.40 excluding LLM-heavy posts, p ≤ 0.03). learnML–DL is weaker under 4B (τ = −0.30, p = 0.12). ML–learnML: no trend with either model.
+  - → Robust claim: **r/MachineLearning and r/deeplearning converged, beyond shared LLM vocabulary**. Weaker claim: learnML–DL. Not supported: general three-way convergence.
 
 ---
 

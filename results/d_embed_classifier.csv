@@ -1,0 +1,65 @@
+model,condition,quarter,n_per_sub,macro_f1,f1_sd
+qwen3-embedding-0-6b,all posts,2021Q1,1208,0.49062,0.02217
+qwen3-embedding-0-6b,all posts,2021Q2,1384,0.50651,0.01102
+qwen3-embedding-0-6b,all posts,2021Q3,1019,0.49404,0.02818
+qwen3-embedding-0-6b,all posts,2021Q4,881,0.49985,0.01086
+qwen3-embedding-0-6b,all posts,2022Q1,1109,0.49001,0.01827
+qwen3-embedding-0-6b,all posts,2022Q2,1077,0.51816,0.01112
+qwen3-embedding-0-6b,all posts,2022Q3,919,0.49207,0.01765
+qwen3-embedding-0-6b,all posts,2022Q4,881,0.4756,0.01195
+qwen3-embedding-0-6b,all posts,2023Q1,1047,0.47769,0.01172
+qwen3-embedding-0-6b,all posts,2023Q2,1169,0.50334,0.0127
+qwen3-embedding-0-6b,all posts,2023Q3,1270,0.5021,0.0149
+qwen3-embedding-0-6b,all posts,2023Q4,1048,0.48795,0.02154
+qwen3-embedding-0-6b,all posts,2024Q1,1078,0.49143,0.01896
+qwen3-embedding-0-6b,all posts,2024Q2,1173,0.47759,0.00979
+qwen3-embedding-0-6b,all posts,2024Q3,1099,0.48013,0.01505
+qwen3-embedding-0-6b,all posts,2024Q4,960,0.46772,0.01384
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q1,1040,0.50664,0.02283
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q2,1222,0.50029,0.01151
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q3,875,0.49946,0.02421
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q4,773,0.51761,0.01923
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q1,948,0.49296,0.02085
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q2,952,0.48704,0.01566
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q3,805,0.47491,0.02249
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q4,746,0.46661,0.0236
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q1,852,0.46131,0.02188
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q2,923,0.4954,0.01687
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q3,975,0.51648,0.01405
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q4,817,0.4822,0.01719
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q1,898,0.47385,0.01556
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q2,952,0.48803,0.01733
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q3,875,0.49512,0.02046
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q4,753,0.48063,0.02165
+qwen3-embedding-4b,all posts,2021Q1,1208,0.51013,0.01427
+qwen3-embedding-4b,all posts,2021Q2,1384,0.51757,0.01598
+qwen3-embedding-4b,all posts,2021Q3,1019,0.49994,0.024
+qwen3-embedding-4b,all posts,2021Q4,881,0.5196,0.01056
+qwen3-embedding-4b,all posts,2022Q1,1109,0.50633,0.01788
+qwen3-embedding-4b,all posts,2022Q2,1077,0.51134,0.0148
+qwen3-embedding-4b,all posts,2022Q3,919,0.50604,0.01921
+qwen3-embedding-4b,all posts,2022Q4,881,0.48495,0.01736
+qwen3-embedding-4b,all posts,2023Q1,1047,0.48765,0.02822
+qwen3-embedding-4b,all posts,2023Q2,1169,0.51051,0.01091
+qwen3-embedding-4b,all posts,2023Q3,1270,0.51143,0.00821
+qwen3-embedding-4b,all posts,2023Q4,1048,0.48492,0.01381
+qwen3-embedding-4b,all posts,2024Q1,1078,0.50701,0.01227
+qwen3-embedding-4b,all posts,2024Q2,1173,0.49658,0.01428
+qwen3-embedding-4b,all posts,2024Q3,1099,0.48555,0.01175
+qwen3-embedding-4b,all posts,2024Q4,960,0.48119,0.01145
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q1,1040,0.51522,0.0185
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q2,1222,0.50025,0.01329
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q3,875,0.50598,0.02422
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q4,773,0.50342,0.02096
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q1,948,0.49567,0.01602
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q2,952,0.52442,0.01758
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q3,805,0.50609,0.01614
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q4,746,0.49006,0.01895
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q1,852,0.47167,0.01484
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q2,923,0.51697,0.01545
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q3,975,0.52271,0.01416
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q4,817,0.49716,0.03632
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q1,898,0.4964,0.01005
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q2,952,0.50151,0.01473
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q3,875,0.5032,0.01495
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q4,753,0.5038,0.02163

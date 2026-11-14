@@ -1,0 +1,3 @@
+metric,value
+post-level family agreement (dominant NMF family vs mapped BERTopic family),0.4747
+BERTopic outliers after reduction (%),0.0

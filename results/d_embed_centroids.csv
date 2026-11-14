@@ -1,0 +1,193 @@
+model,condition,quarter,pair,n_per_sub,cos,excess_distance
+qwen3-embedding-0-6b,all posts,2021Q1,ML–learnML,1208,0.99357,0.00558
+qwen3-embedding-0-6b,all posts,2021Q1,ML–DL,1208,0.98893,0.01022
+qwen3-embedding-0-6b,all posts,2021Q1,learnML–DL,1208,0.98496,0.01418
+qwen3-embedding-0-6b,all posts,2021Q2,ML–learnML,1384,0.9933,0.00592
+qwen3-embedding-0-6b,all posts,2021Q2,ML–DL,1384,0.99008,0.00917
+qwen3-embedding-0-6b,all posts,2021Q2,learnML–DL,1384,0.98592,0.01332
+qwen3-embedding-0-6b,all posts,2021Q3,ML–learnML,1019,0.99265,0.00631
+qwen3-embedding-0-6b,all posts,2021Q3,ML–DL,1019,0.99049,0.00849
+qwen3-embedding-0-6b,all posts,2021Q3,learnML–DL,1019,0.98487,0.01415
+qwen3-embedding-0-6b,all posts,2021Q4,ML–learnML,881,0.99164,0.0071
+qwen3-embedding-0-6b,all posts,2021Q4,ML–DL,881,0.9873,0.01156
+qwen3-embedding-0-6b,all posts,2021Q4,learnML–DL,881,0.97891,0.01993
+qwen3-embedding-0-6b,all posts,2022Q1,ML–learnML,1109,0.9936,0.00541
+qwen3-embedding-0-6b,all posts,2022Q1,ML–DL,1109,0.98874,0.01028
+qwen3-embedding-0-6b,all posts,2022Q1,learnML–DL,1109,0.98396,0.01508
+qwen3-embedding-0-6b,all posts,2022Q2,ML–learnML,1077,0.99324,0.00575
+qwen3-embedding-0-6b,all posts,2022Q2,ML–DL,1077,0.98718,0.01184
+qwen3-embedding-0-6b,all posts,2022Q2,learnML–DL,1077,0.98153,0.01749
+qwen3-embedding-0-6b,all posts,2022Q3,ML–learnML,919,0.99255,0.00623
+qwen3-embedding-0-6b,all posts,2022Q3,ML–DL,919,0.98963,0.00923
+qwen3-embedding-0-6b,all posts,2022Q3,learnML–DL,919,0.9855,0.01335
+qwen3-embedding-0-6b,all posts,2022Q4,ML–learnML,881,0.9924,0.00638
+qwen3-embedding-0-6b,all posts,2022Q4,ML–DL,881,0.9902,0.00861
+qwen3-embedding-0-6b,all posts,2022Q4,learnML–DL,881,0.98747,0.01133
+qwen3-embedding-0-6b,all posts,2023Q1,ML–learnML,1047,0.99164,0.00735
+qwen3-embedding-0-6b,all posts,2023Q1,ML–DL,1047,0.99245,0.00658
+qwen3-embedding-0-6b,all posts,2023Q1,learnML–DL,1047,0.98941,0.00956
+qwen3-embedding-0-6b,all posts,2023Q2,ML–learnML,1169,0.99088,0.00827
+qwen3-embedding-0-6b,all posts,2023Q2,ML–DL,1169,0.99166,0.00749
+qwen3-embedding-0-6b,all posts,2023Q2,learnML–DL,1169,0.98891,0.01022
+qwen3-embedding-0-6b,all posts,2023Q3,ML–learnML,1270,0.99393,0.00524
+qwen3-embedding-0-6b,all posts,2023Q3,ML–DL,1270,0.98688,0.01232
+qwen3-embedding-0-6b,all posts,2023Q3,learnML–DL,1270,0.97997,0.01919
+qwen3-embedding-0-6b,all posts,2023Q4,ML–learnML,1048,0.99412,0.00489
+qwen3-embedding-0-6b,all posts,2023Q4,ML–DL,1048,0.99105,0.00795
+qwen3-embedding-0-6b,all posts,2023Q4,learnML–DL,1048,0.98556,0.01348
+qwen3-embedding-0-6b,all posts,2024Q1,ML–learnML,1078,0.99348,0.00553
+qwen3-embedding-0-6b,all posts,2024Q1,ML–DL,1078,0.99209,0.00692
+qwen3-embedding-0-6b,all posts,2024Q1,learnML–DL,1078,0.99023,0.0088
+qwen3-embedding-0-6b,all posts,2024Q2,ML–learnML,1173,0.99338,0.00572
+qwen3-embedding-0-6b,all posts,2024Q2,ML–DL,1173,0.99177,0.00736
+qwen3-embedding-0-6b,all posts,2024Q2,learnML–DL,1173,0.98954,0.00956
+qwen3-embedding-0-6b,all posts,2024Q3,ML–learnML,1099,0.99252,0.00653
+qwen3-embedding-0-6b,all posts,2024Q3,ML–DL,1099,0.99348,0.00557
+qwen3-embedding-0-6b,all posts,2024Q3,learnML–DL,1099,0.98798,0.01105
+qwen3-embedding-0-6b,all posts,2024Q4,ML–learnML,960,0.99207,0.00682
+qwen3-embedding-0-6b,all posts,2024Q4,ML–DL,960,0.99366,0.00529
+qwen3-embedding-0-6b,all posts,2024Q4,learnML–DL,960,0.98815,0.01077
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q1,ML–learnML,1040,0.99338,0.00558
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q1,ML–DL,1040,0.98711,0.0119
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q1,learnML–DL,1040,0.98379,0.01523
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q2,ML–learnML,1222,0.99336,0.00577
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q2,ML–DL,1222,0.98952,0.00962
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q2,learnML–DL,1222,0.98526,0.01389
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q3,ML–learnML,875,0.9927,0.00606
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q3,ML–DL,875,0.98865,0.01018
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q3,learnML–DL,875,0.98315,0.01565
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q4,ML–learnML,773,0.99183,0.00676
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q4,ML–DL,773,0.98545,0.01319
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2021Q4,learnML–DL,773,0.97679,0.02189
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q1,ML–learnML,948,0.99359,0.00527
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q1,ML–DL,948,0.98766,0.01116
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q1,learnML–DL,948,0.98324,0.01563
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q2,ML–learnML,952,0.99365,0.0052
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q2,ML–DL,952,0.98606,0.01279
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q2,learnML–DL,952,0.98135,0.01755
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q3,ML–learnML,805,0.99297,0.00566
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q3,ML–DL,805,0.98833,0.0104
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q3,learnML–DL,805,0.98419,0.01449
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q4,ML–learnML,746,0.99257,0.00599
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q4,ML–DL,746,0.98876,0.00983
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2022Q4,learnML–DL,746,0.9855,0.01306
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q1,ML–learnML,852,0.99323,0.0055
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q1,ML–DL,852,0.99215,0.00656
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q1,learnML–DL,852,0.98823,0.01051
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q2,ML–learnML,923,0.99171,0.00714
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q2,ML–DL,923,0.99089,0.00796
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q2,learnML–DL,923,0.98565,0.0132
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q3,ML–learnML,975,0.99407,0.00479
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q3,ML–DL,975,0.9854,0.0135
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q3,learnML–DL,975,0.97824,0.02067
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q4,ML–learnML,817,0.9941,0.00455
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q4,ML–DL,817,0.99025,0.00848
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2023Q4,learnML–DL,817,0.98452,0.01418
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q1,ML–learnML,898,0.99382,0.00496
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q1,ML–DL,898,0.99089,0.0079
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q1,learnML–DL,898,0.98802,0.0108
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q2,ML–learnML,952,0.99325,0.0056
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q2,ML–DL,952,0.98992,0.00897
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q2,learnML–DL,952,0.98706,0.01183
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q3,ML–learnML,875,0.99184,0.00693
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q3,ML–DL,875,0.99139,0.00738
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q3,learnML–DL,875,0.98571,0.01306
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q4,ML–learnML,753,0.99069,0.0079
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q4,ML–DL,753,0.99184,0.00679
+qwen3-embedding-0-6b,LLM-heavy posts excluded,2024Q4,learnML–DL,753,0.98502,0.01356
+qwen3-embedding-4b,all posts,2021Q1,ML–learnML,1208,0.99417,0.00506
+qwen3-embedding-4b,all posts,2021Q1,ML–DL,1208,0.98985,0.00938
+qwen3-embedding-4b,all posts,2021Q1,learnML–DL,1208,0.98543,0.0138
+qwen3-embedding-4b,all posts,2021Q2,ML–learnML,1384,0.9935,0.0058
+qwen3-embedding-4b,all posts,2021Q2,ML–DL,1384,0.99123,0.0081
+qwen3-embedding-4b,all posts,2021Q2,learnML–DL,1384,0.98559,0.01371
+qwen3-embedding-4b,all posts,2021Q3,ML–learnML,1019,0.9928,0.00628
+qwen3-embedding-4b,all posts,2021Q3,ML–DL,1019,0.99172,0.00737
+qwen3-embedding-4b,all posts,2021Q3,learnML–DL,1019,0.98487,0.01425
+qwen3-embedding-4b,all posts,2021Q4,ML–learnML,881,0.99161,0.00728
+qwen3-embedding-4b,all posts,2021Q4,ML–DL,881,0.98931,0.00966
+qwen3-embedding-4b,all posts,2021Q4,learnML–DL,881,0.9796,0.01936
+qwen3-embedding-4b,all posts,2022Q1,ML–learnML,1109,0.99359,0.00553
+qwen3-embedding-4b,all posts,2022Q1,ML–DL,1109,0.99052,0.0086
+qwen3-embedding-4b,all posts,2022Q1,learnML–DL,1109,0.98465,0.01449
+qwen3-embedding-4b,all posts,2022Q2,ML–learnML,1077,0.99365,0.00544
+qwen3-embedding-4b,all posts,2022Q2,ML–DL,1077,0.9892,0.00991
+qwen3-embedding-4b,all posts,2022Q2,learnML–DL,1077,0.98383,0.01528
+qwen3-embedding-4b,all posts,2022Q3,ML–learnML,919,0.99315,0.00578
+qwen3-embedding-4b,all posts,2022Q3,ML–DL,919,0.992,0.00697
+qwen3-embedding-4b,all posts,2022Q3,learnML–DL,919,0.98618,0.0128
+qwen3-embedding-4b,all posts,2022Q4,ML–learnML,881,0.99317,0.00574
+qwen3-embedding-4b,all posts,2022Q4,ML–DL,881,0.99145,0.00748
+qwen3-embedding-4b,all posts,2022Q4,learnML–DL,881,0.9885,0.01043
+qwen3-embedding-4b,all posts,2023Q1,ML–learnML,1047,0.99233,0.00678
+qwen3-embedding-4b,all posts,2023Q1,ML–DL,1047,0.99358,0.00556
+qwen3-embedding-4b,all posts,2023Q1,learnML–DL,1047,0.98957,0.0095
+qwen3-embedding-4b,all posts,2023Q2,ML–learnML,1169,0.99136,0.00786
+qwen3-embedding-4b,all posts,2023Q2,ML–DL,1169,0.9924,0.00683
+qwen3-embedding-4b,all posts,2023Q2,learnML–DL,1169,0.98939,0.00982
+qwen3-embedding-4b,all posts,2023Q3,ML–learnML,1270,0.99411,0.00515
+qwen3-embedding-4b,all posts,2023Q3,ML–DL,1270,0.98637,0.01289
+qwen3-embedding-4b,all posts,2023Q3,learnML–DL,1270,0.97939,0.01985
+qwen3-embedding-4b,all posts,2023Q4,ML–learnML,1048,0.99374,0.00537
+qwen3-embedding-4b,all posts,2023Q4,ML–DL,1048,0.99136,0.00773
+qwen3-embedding-4b,all posts,2023Q4,learnML–DL,1048,0.98531,0.01382
+qwen3-embedding-4b,all posts,2024Q1,ML–learnML,1078,0.99352,0.00559
+qwen3-embedding-4b,all posts,2024Q1,ML–DL,1078,0.99311,0.00599
+qwen3-embedding-4b,all posts,2024Q1,learnML–DL,1078,0.99043,0.0087
+qwen3-embedding-4b,all posts,2024Q2,ML–learnML,1173,0.9931,0.0061
+qwen3-embedding-4b,all posts,2024Q2,ML–DL,1173,0.99238,0.00685
+qwen3-embedding-4b,all posts,2024Q2,learnML–DL,1173,0.98927,0.00992
+qwen3-embedding-4b,all posts,2024Q3,ML–learnML,1099,0.99222,0.00692
+qwen3-embedding-4b,all posts,2024Q3,ML–DL,1099,0.99388,0.00527
+qwen3-embedding-4b,all posts,2024Q3,learnML–DL,1099,0.98858,0.01056
+qwen3-embedding-4b,all posts,2024Q4,ML–learnML,960,0.99187,0.00716
+qwen3-embedding-4b,all posts,2024Q4,ML–DL,960,0.994,0.00508
+qwen3-embedding-4b,all posts,2024Q4,learnML–DL,960,0.98855,0.0105
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q1,ML–learnML,1040,0.99405,0.00505
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q1,ML–DL,1040,0.98841,0.0107
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q1,learnML–DL,1040,0.9844,0.01473
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q2,ML–learnML,1222,0.99358,0.00565
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q2,ML–DL,1222,0.99083,0.00841
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q2,learnML–DL,1222,0.98523,0.01401
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q3,ML–learnML,875,0.99274,0.00616
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q3,ML–DL,875,0.99036,0.00859
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q3,learnML–DL,875,0.98369,0.01523
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q4,ML–learnML,773,0.99174,0.00703
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q4,ML–DL,773,0.98807,0.01071
+qwen3-embedding-4b,LLM-heavy posts excluded,2021Q4,learnML–DL,773,0.97851,0.0203
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q1,ML–learnML,948,0.9936,0.00538
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q1,ML–DL,948,0.98966,0.00929
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q1,learnML–DL,948,0.98446,0.01451
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q2,ML–learnML,952,0.99392,0.00506
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q2,ML–DL,952,0.98818,0.01079
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q2,learnML–DL,952,0.98395,0.01506
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q3,ML–learnML,805,0.99357,0.00522
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q3,ML–DL,805,0.99081,0.00804
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q3,learnML–DL,805,0.98499,0.01387
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q4,ML–learnML,746,0.99341,0.00533
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q4,ML–DL,746,0.99018,0.00854
+qwen3-embedding-4b,LLM-heavy posts excluded,2022Q4,learnML–DL,746,0.98688,0.01185
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q1,ML–learnML,852,0.99312,0.00576
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q1,ML–DL,852,0.99315,0.0057
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q1,learnML–DL,852,0.98844,0.01043
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q2,ML–learnML,923,0.99199,0.00697
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q2,ML–DL,923,0.99153,0.00744
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q2,learnML–DL,923,0.98675,0.01224
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q3,ML–learnML,975,0.99411,0.00487
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q3,ML–DL,975,0.98557,0.01343
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q3,learnML–DL,975,0.9784,0.02062
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q4,ML–learnML,817,0.9938,0.00498
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q4,ML–DL,817,0.991,0.00785
+qwen3-embedding-4b,LLM-heavy posts excluded,2023Q4,learnML–DL,817,0.98483,0.014
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q1,ML–learnML,898,0.99379,0.00513
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q1,ML–DL,898,0.99195,0.00696
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q1,learnML–DL,898,0.98845,0.01051
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q2,ML–learnML,952,0.993,0.00597
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q2,ML–DL,952,0.99054,0.00845
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q2,learnML–DL,952,0.98717,0.01181
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q3,ML–learnML,875,0.99194,0.00698
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q3,ML–DL,875,0.99189,0.00701
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q3,learnML–DL,875,0.9869,0.01202
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q4,ML–learnML,753,0.99076,0.00801
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q4,ML–DL,753,0.9921,0.00667
+qwen3-embedding-4b,LLM-heavy posts excluded,2024Q4,learnML–DL,753,0.98568,0.01308
