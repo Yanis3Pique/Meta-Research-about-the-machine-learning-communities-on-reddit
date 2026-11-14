@@ -1,9 +1,12 @@
 
 import csv
+import hashlib
 import html
 import io
 import json
+import os
 import re
+import secrets
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -60,6 +63,63 @@ def normalize_text(value):
     return SPACE_RE.sub(" ", value).strip()
 
 
+def is_removed_text(value):
+    """True if the raw field is a Reddit removal/deletion placeholder."""
+    return (
+        isinstance(value, str)
+        and value.strip().lower() in REMOVED_VALUES
+    )
+
+
+# r/MachineLearning-style post-type tags: "[D] ...", "[Research] ...".
+TITLE_TAG_RE = re.compile(r"^\s*[\[(]\s*([a-z]+)\s*[\])]", re.I)
+
+TITLE_TAGS = {
+    "d": "discussion",
+    "discussion": "discussion",
+    "r": "research",
+    "research": "research",
+    "p": "project",
+    "project": "project",
+    "n": "news",
+    "news": "news",
+}
+
+
+def parse_title_tag(title):
+    match = TITLE_TAG_RE.match(title or "")
+
+    if not match:
+        return "none"
+
+    return TITLE_TAGS.get(match.group(1).lower(), "none")
+
+
+# Salted hash so unique authors can be counted without storing usernames.
+# Set REDDIT_AUTHOR_SALT to keep hashes stable across runs; never commit it.
+AUTHOR_SALT = os.environ.get("REDDIT_AUTHOR_SALT") or secrets.token_hex(16)
+
+NO_AUTHOR = {"", "[deleted]", "[removed]"}
+
+
+def hash_author(author):
+    if not isinstance(author, str) or author in NO_AUTHOR:
+        return ""
+
+    digest = hashlib.sha256(
+        f"{AUTHOR_SALT}:{author}".encode("utf-8")
+    )
+    return digest.hexdigest()[:16]
+
+
+def flag(value):
+    """Normalize JSON booleans to 1/0, missing to empty."""
+    if value is None or value == "":
+        return ""
+
+    return int(bool(value))
+
+
 def prepare_nlp_text(title, body):
     """Keep words, punctuation and Reddit-specific markers."""
     combined = f"{title} {body}".strip()
@@ -95,6 +155,18 @@ columns = [
     "num_comments",
     "flair",
     "url",
+    # Added for the research design (docs/research_design.md, Step 0).
+    "title_tag",
+    "is_removed",
+    "removed_by_category",
+    "retrieved_on",
+    "updated_on",
+    "subreddit_subscribers",
+    "domain",
+    "upvote_ratio",
+    "stickied",
+    "over_18",
+    "author_hash",
 ]
 
 with dataset_path.open(
@@ -162,6 +234,14 @@ with dataset_path.open(
 
                         seen_ids.add(post_id)
 
+                        # Must be computed before normalize_text()
+                        # blanks "[removed]" bodies.
+                        removed_by = post.get("removed_by_category") or ""
+                        is_removed = int(
+                            bool(removed_by)
+                            or is_removed_text(post.get("selftext"))
+                        )
+
                         title = normalize_text(post.get("title"))
                         body = normalize_text(post.get("selftext"))
 
@@ -211,7 +291,31 @@ with dataset_path.open(
                                 "link_flair_text", ""
                             ),
                             "url": post.get("url") or "",
+                            "title_tag": parse_title_tag(title),
+                            "is_removed": is_removed,
+                            "removed_by_category": removed_by,
+                            "retrieved_on": (
+                                post.get("retrieved_on")
+                                or post.get("retrieved_utc")
+                                or ""
+                            ),
+                            "updated_on": post.get("updated_on") or "",
+                            "subreddit_subscribers": post.get(
+                                "subreddit_subscribers", ""
+                            ),
+                            "domain": post.get("domain") or "",
+                            "upvote_ratio": post.get(
+                                "upvote_ratio", ""
+                            ),
+                            "stickied": flag(post.get("stickied")),
+                            "over_18": flag(post.get("over_18")),
+                            "author_hash": hash_author(
+                                post.get("author")
+                            ),
                         })
+
+                        if is_removed:
+                            stats[key]["removed"] += 1
 
         total_kept = sum(
             stats[(subreddit, year)]["kept"]
@@ -230,6 +334,7 @@ report_columns = [
     "kept",
     "eligible_50",
     "title_only",
+    "removed",
     "empty_or_url_only",
     "duplicate_id",
     "missing_id",
@@ -259,6 +364,7 @@ with report_path.open(
                 "kept": s["kept"],
                 "eligible_50": s["eligible_50"],
                 "title_only": s["title_only"],
+                "removed": s["removed"],
                 "empty_or_url_only": s["empty_or_url_only"],
                 "duplicate_id": s["duplicate_id"],
                 "missing_id": s["missing_id"],

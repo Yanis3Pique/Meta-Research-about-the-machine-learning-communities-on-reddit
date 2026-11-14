@@ -104,7 +104,12 @@ Run from the repository root **in this order**:
 
 # Optional: inspect specific lexical noise
 .\.venv\Scripts\python.exe inspect_lexical_noise.py
+
+# Data-validity checks (removal, score capture, title tags)
+.\.venv\Scripts\python.exe 00_data_checks.py
 ```
+
+`clean_data.py` also extracts `title_tag`, `is_removed`, `removed_by_category`, `retrieved_on`, `updated_on`, `subreddit_subscribers`, `domain`, `upvote_ratio`, `stickied`, `over_18` and a salted `author_hash` (no usernames are stored). Set the environment variable `REDDIT_AUTHOR_SALT` to keep author hashes stable across runs; never commit it. See `docs/research_design.md` §1.6 for what the data checks found.
 
 `build_corpus.py` requires the `url` column from the current `clean_data.py`. If missing, rerun `clean_data.py`.
 
@@ -128,6 +133,7 @@ NMF can take several minutes. If you already have the processed corpus, you can 
 | `audit_data.py` | `processed/audit_report.csv` | Quality diagnostics |
 | `build_corpus.py` | `processed/modeling_corpus.csv` | Final modeling corpus |
 | `build_corpus.py` | `processed/corpus_filter_report.csv` | Exclusion reasons |
+| `00_data_checks.py` | `results/data_checks_monthly.csv`, `results/data_checks_yearly.csv` | Removal, score-capture and tag diagnostics per subreddit-month/year |
 | `lexical_analysis.py` | `results/tfidf_top_terms.csv` | Highest mean TF-IDF terms |
 | `lexical_analysis.py` | `results/term_shifts.csv` | Changes in term prevalence (pp) |
 | `nmf_analysis.py` | `results/nmf_topics.csv` | Top words per topic |

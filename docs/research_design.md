@@ -91,6 +91,17 @@ Produce `results/data_checks.csv` and one overview figure (Figure 1 of the paper
 | Tag coverage | share of r/ML titles with a parsable tag | If <80%, tag-based analysis reported only as descriptive |
 | Missing fields | share of empty `score`, `num_comments`, `url` | Report; drop rows only for the analysis that needs the field |
 
+### 1.6 Step 0 results (14 Nov 2026, `00_data_checks.py`)
+
+Pipeline reproduces the README counts exactly (230,298 raw → 230,159 cleaned → 224,300 corpus), so the dump is the same snapshot.
+
+1. **Score capture changes mid-2023.** Until May 2023 posts were archived weeks to months after creation (median lag ≈ 500–1,600 h). From Jul 2023 they were archived within seconds. For **Jun–Oct 2023**, ~97% of visible posts have `score ≤ 1` (vs. ~50% otherwise): those scores are at-creation values and unusable. From Nov 2023 on, scores look matured again (score ≤ 1 back to ~50%) even though the timestamps still say "seconds" — they were evidently refreshed later. `num_comments` is much less affected (zero-comment share only rises from ~40% to ~45–49% in Jul–Oct 2023).
+   → **B gate decision:** exclude Jun–Oct 2023 from all engagement analyses; use `num_comments` as the primary outcome and `score` as secondary; add a capture-regime dummy (before Jun 2023 / after Oct 2023) as a robustness control.
+2. **Removal flags are not comparable across the same switch.** Posts captured seconds after posting were often captured *before* moderators removed them, so the removal rate drops artificially from Jul 2023 (r/learnmachinelearning: ~20% → ~7%). Removal rate cannot be used as a time-series variable across mid-2023; `S_visible` after Jul 2023 includes some posts that were later removed.
+3. **r/MachineLearning is heavily moderated: 72–80% of submitted posts are removed** (mostly `moderator`). The visible subreddit is a small, curated slice of what people submit. Compare `S_submitted` vs. `S_visible` for r/ML in A and D — this is likely a real finding (what people post vs. what the community shows).
+4. **Title tags:** 90% coverage among *visible* r/ML posts (27% among removed ones — untagged posts get removed). → Tag analysis (§2.9) is valid on `S_visible`.
+5. `subreddit_subscribers` is available per post → can normalise engagement by audience size in addition to percentiles.
+
 ---
 
 ## 2. Angle A — Topics over time
