@@ -1,0 +1,21 @@
+topic_id,terms,mean_weight_all
+0,"model, train, language, language model, train model, large, large language, ai model, diffusion, training, diffusion model, deploy, build, transformer, base",0.09008
+1,"network, neural, neural network, convolutional, convolutional neural, graph, graph neural, train, train neural, scratch, network scratch, layer, function, architecture, net",0.03664
+2,"ai, ai model, generative ai, build, generative, video, tool, generate, create, future, ai tool, power, ai generate, development, ai research",0.09717
+3,"project, idea, project idea, look, beginner, final, ai project, final year, year, year project, suggestion, work, research project, look project, nlp",0.03274
+4,"data, science, data science, data scientist, scientist, training, augmentation, interview, data augmentation, analysis, set, engineer, data analysis, synthetic, data set",0.05969
+5,"llm, local, local llm, run, build, llm model, run llm, finetune, prompt, text, source llm, app, inference, rag, resource",0.06625
+6,"image, classification, text, image classification, generation, segmentation, video, text image, cnn, generate, image generation, image segmentation, text classification, gan, recognition",0.06887
+7,"course, free, online, online course, beginner, book, free course, coursera, udemy, ng, andrew, andrew ng, resource, math, advanced",0.02968
+8,"start, book, beginner, start ai, resource, tip, math, journey, field, resource start, reinforcement, training, advice start, study, start journey",0.02013
+9,"time, series, time series, series data, forecast, real, series forecast, real time, forecasting, series forecasting, series analysis, analysis, prediction, multivariate, classification",0.03536
+10,"computer, vision, computer vision, transformer, resource, vision model, vision transformer, vision project, nlp, vision news, news, vision language, computer science, video, code",0.02331
+11,"dataset, train, create, custom, custom dataset, image dataset, large, large dataset, create dataset, look, label, train model, problem, small, class",0.04156
+12,"source, open, open source, source llm, tool, source ai, code, source model, source project, chatgpt, free, release, source code, library, source tool",0.04033
+13,"detection, object, object detection, anomaly, anomaly detection, detection model, segmentation, yolo, algorithm, tutorial, real, time object, video, yolo object, detection algorithm",0.02521
+14,"pytorch, tensorflow, tensorflow pytorch, tutorial, implementation, pytorch tensorflow, training, resource, code, cnn, understand, cuda, pytorch model, scratch, implement",0.0383
+15,"paper, research, research paper, explain, read, ai research, nlp, summary, look, code, work, paper explain, book, understand, transformer",0.07076
+16,"python, library, code, algorithm, build, python library, beginner, book, scratch, regression, create, linear, tutorial, llama, linear regression",0.05438
+17,"advice, seek, build, look, seek advice, career, beginner, career advice, engineer, look advice, path, work, pc, job, ask advice",0.03348
+18,"artificial, intelligence, artificial intelligence, understand, video, guide, intelligence ai, algorithm, art, general, create, type, step, difference, general intelligence",0.02788
+19,"gpu, fine, tune, fine tune, tuning, fine tuning, training, run, llama, work, cloud, llama2, gb, tune llm, amd",0.09253

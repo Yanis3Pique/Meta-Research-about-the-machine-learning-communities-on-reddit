@@ -1,0 +1,12 @@
+measure,group,kendall_tau,p,mean_pre,mean_post
+excess_jsd,ML–DL,0.1333,0.5056,0.0114,0.0124
+excess_jsd,ML–learnML,0.25,0.1949,0.0136,0.0152
+excess_jsd,learnML–DL,-0.3333,0.0788,0.0202,0.0157
+macro_f1,LLM vocabulary masked,-0.1833,0.3502,0.4199,0.423
+macro_f1,all vocabulary,-0.1167,0.5643,0.4261,0.4306
+jsd_to_localllama2023,MachineLearning,-0.4725,0.0193,0.173,0.1181
+drift_from_2021h1,MachineLearning,0.6264,0.0012,0.0034,0.0223
+jsd_to_localllama2023,deeplearning,-0.8462,0.0,0.1839,0.1281
+drift_from_2021h1,deeplearning,0.7363,0.0001,0.0063,0.0211
+jsd_to_localllama2023,learnmachinelearning,-0.6044,0.002,0.1991,0.1556
+drift_from_2021h1,learnmachinelearning,0.956,0.0,0.0028,0.0198

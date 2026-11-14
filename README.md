@@ -139,6 +139,10 @@ NMF can take several minutes. If you already have the processed corpus, you can 
 | `nmf_analysis.py` | `results/nmf_topics.csv` | Top words per topic |
 | `nmf_analysis.py` | `results/nmf_topic_shares.csv` | Topic shares by community/period |
 | `nmf_analysis.py` | `results/nmf_topic_shifts.csv` | Changes in topic shares (pp) |
+| `10_topics_select.py` | `results/a_model_selection*.csv` | NMF grid over k: NPMI, diversity, stability |
+| `11_topics_fit.py K` | `results/a_topics.csv`, `processed/doc_topics.parquet` | Final NMF (k=20), labelling sheet in `processed/` |
+| `13_topics_time.py` | `results/a_*.csv`, `results/figures/fig_a_*.png` | Monthly topic-family prevalence, ITS + placebos, r/ML tags, emerging terms |
+| `40_convergence.py` | `results/d_*.csv`, `results/figures/fig_d_*.png` | Divergence between subreddits, classifier distinctiveness, distance to r/LocalLLaMA |
 
 The five aggregate CSVs under `results/` are tracked by Git. The raw archives and individual post datasets are ignored. Re-running scripts overwrites their corresponding output CSVs.
 

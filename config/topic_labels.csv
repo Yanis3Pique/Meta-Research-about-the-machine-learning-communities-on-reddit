@@ -1,0 +1,21 @@
+topic_id,label,family,coherent,labeled_by,note
+0,Models: training & deployment (generic),generic,partly,claude-draft,"Mix of LLM, diffusion and generic 'my model' titles; candidate for LLM family in robustness check"
+1,Neural network architectures (CNN/GNN),classic_dl_cv,yes,claude-draft,
+2,AI & generative AI tools/news,llm_genai,yes,claude-draft,"Broad 'AI' framing: tools, news, generative AI"
+3,Project ideas (students),learning_career,yes,claude-draft,
+4,Data science & data handling,data_applied,partly,claude-draft,Data science as a field + data preprocessing questions
+5,LLM applications (local LLMs/RAG/prompting),llm_genai,yes,claude-draft,
+6,Image/text classification & generation,classic_dl_cv,yes,claude-draft,
+7,Courses & learning resources,learning_career,yes,claude-draft,
+8,Getting started / beginner path,learning_career,partly,claude-draft,
+9,Time series & real-time,data_applied,partly,claude-draft,"Also catches unrelated titles containing 'time'"
+10,Computer vision & vision transformers,classic_dl_cv,partly,claude-draft,
+11,Datasets: finding & building,data_applied,yes,claude-draft,
+12,Open-source models & tools,llm_genai,yes,claude-draft,
+13,Object & anomaly detection,classic_dl_cv,yes,claude-draft,
+14,Frameworks: PyTorch/TensorFlow,compute_tooling,yes,claude-draft,
+15,Research papers & reading,research,yes,claude-draft,
+16,Python code & libraries,compute_tooling,partly,claude-draft,
+17,Advice & career,learning_career,partly,claude-draft,"Also hardware-purchase advice"
+18,Artificial intelligence (general discourse),generic,partly,claude-draft,
+19,"GPU, compute & fine-tuning",compute_tooling,yes,claude-draft,"Hardware before 2023; LLM fine-tuning after — interpret with care"

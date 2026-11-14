@@ -192,6 +192,22 @@ LocalLLaMA has no pre-period → no ITS. Report its topic profile in 2023 vs. 20
 | BERTopic and NMF disagree on a hypothesis | Report both; the claim becomes "model-dependent" — honest and acceptable |
 | Short titles → weak topics | Robustness on title+body; restrict to `eligible_50` posts |
 
+### 2.12 First results (14 Nov 2026) — scripts 10, 11, 13
+
+**Decisions taken (deviations from the plan above):**
+- *Stability via resampling, not seeds.* NMF with `nndsvda` init is deterministic, so "5 seeds" = 5 different balanced training samples.
+- *k = 20, not the rule's k = 10.* NPMI and diversity both decrease monotonically with k (k=10: NPMI 0.085; k=20: 0.046), so the rule degenerates to "smallest k". All k had stability ≥ 0.89; k=20 has the highest (0.948) and is the smallest k that separates *research papers*, *career advice* and *GPU/fine-tuning* — needed for H3/H4. Justify this in the paper with `results/a_model_selection_summary.csv`.
+- *Inference via placebos, not HAC p-values.* 72/138 placebo ITS fits (fake breaks inside 2021–22) were "significant" at p<0.05: with 23 pre-months and 6 parameters the HAC SEs are too small. We therefore only claim an effect when the real level jump exceeds **every** placebo jump for that series (`a_placebo.csv`). q-values stay in the tables but are not the evidence.
+- Topic labels and families in `config/topic_labels.csv` are **Claude drafts** — both team members must review (§2.4).
+
+**Results (submitted posts, k=20):**
+- **H1 supported.** LLMs & generative AI jumps at ChatGPT in all three historical subreddits; the level jump is 2–4× the largest placebo. Dec 2024 gap vs. pre-trend counterfactual: r/MachineLearning +4.7 pp, r/learnmachinelearning +8.1 pp, r/deeplearning +7.8 pp.
+- **H2 rejected as stated.** The beginner subreddit shows the *largest* counterfactual gap, not the smallest (it keeps rising after the jump; r/ML plateaus).
+- **H3 partly supported.** Classic DL & vision declines everywhere (gap −3.2 / −7.5 / −10.9 pp) but only r/MachineLearning's level jump beats all placebos; elsewhere it is a slope change.
+- **H4 unclear.** Research & papers: level drop in r/ML beats placebos, but the slope afterwards is positive; r/ML `[R]` tag share shows no significant change. Needs F (arXiv links) before concluding.
+- Learning & career rises sharply in r/learnmachinelearning (+6.8 pp gap; spike in late 2024 — inspect).
+- Emerging vocabulary: *stable diffusion* peaks Aug–Oct 2022 — the generative-AI wave **predates** ChatGPT; *chatgpt* → *gpt4*/*llama* (Mar 2023) → *lora* → *rag* (late 2023–2024) → *ollama*/*gguf* (2024).
+
 ---
 
 ## 3. Angle F — Link sources
@@ -333,6 +349,13 @@ Embedding centroids (from BERTopic's cached embeddings): cosine similarity betwe
 ### 5.8 Pitfalls
 - Cross-posts (same title in several subreddits) mechanically increase similarity → detect exact-title matches across subreddits within ±7 days, report the rate, exclude them in a robustness run.
 - Different growth rates → handled by balanced sampling; never compare raw-count-based measures.
+
+### 5.9 First results (14 Nov 2026) — script 40
+
+- **H7 not supported.** Excess JSD between subreddit pairs is flat (Kendall τ n.s.); classifier macro-F1 stays ≈ 0.42 (chance 0.33) with no trend, with or without LLM vocabulary masked. The three historical subreddits did **not** become more alike *to each other*.
+- **H8 supported.** All three move toward r/LocalLLaMA's 2023 profile (τ = −0.47 / −0.60 / −0.85, p ≤ 0.02; JSD ≈ 0.18–0.20 → 0.12–0.16), with the drop concentrated at 2022Q4–2023Q1. Drift from each subreddit's own 2021H1 profile grows 7–10×.
+- **Story:** parallel drift — each community moved in the same direction (toward LLM-native content) while keeping its own identity.
+- Caveats: titles alone separate the subreddits only weakly (F1 0.42), which limits the classifier's sensitivity; the mask list (top-40 terms of the 3 LLM topics) includes generic words (*app, build, code, free*) — tighten it. Fightin' Words (§5.4) not yet done.
 
 ---
 

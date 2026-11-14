@@ -1,0 +1,33 @@
+quarter,condition,n_per_sub,macro_f1,f1_sd
+2021Q1,all vocabulary,1184,0.4311,0.017
+2021Q1,LLM vocabulary masked,1184,0.4199,0.0171
+2021Q2,all vocabulary,1366,0.4422,0.0103
+2021Q2,LLM vocabulary masked,1366,0.4409,0.0121
+2021Q3,all vocabulary,1005,0.4206,0.0129
+2021Q3,LLM vocabulary masked,1005,0.4249,0.0074
+2021Q4,all vocabulary,867,0.4304,0.015
+2021Q4,LLM vocabulary masked,867,0.4181,0.0133
+2022Q1,all vocabulary,1090,0.4261,0.0123
+2022Q1,LLM vocabulary masked,1090,0.4236,0.0175
+2022Q2,all vocabulary,1066,0.4481,0.0206
+2022Q2,LLM vocabulary masked,1066,0.4318,0.0117
+2022Q3,all vocabulary,908,0.4011,0.0321
+2022Q3,LLM vocabulary masked,908,0.4,0.0293
+2022Q4,all vocabulary,853,0.4091,0.0134
+2022Q4,LLM vocabulary masked,853,0.4002,0.0157
+2023Q1,all vocabulary,1024,0.4347,0.0189
+2023Q1,LLM vocabulary masked,1024,0.4285,0.0124
+2023Q2,all vocabulary,1154,0.446,0.0182
+2023Q2,LLM vocabulary masked,1154,0.4378,0.0201
+2023Q3,all vocabulary,1249,0.4601,0.014
+2023Q3,LLM vocabulary masked,1249,0.4404,0.0164
+2023Q4,all vocabulary,1023,0.4254,0.025
+2023Q4,LLM vocabulary masked,1023,0.4199,0.014
+2024Q1,all vocabulary,1055,0.4133,0.0082
+2024Q1,LLM vocabulary masked,1055,0.4072,0.0137
+2024Q2,all vocabulary,1134,0.4129,0.0126
+2024Q2,LLM vocabulary masked,1134,0.4202,0.0155
+2024Q3,all vocabulary,1067,0.4253,0.0253
+2024Q3,LLM vocabulary masked,1067,0.4151,0.0253
+2024Q4,all vocabulary,939,0.4269,0.0143
+2024Q4,LLM vocabulary masked,939,0.4146,0.0193
