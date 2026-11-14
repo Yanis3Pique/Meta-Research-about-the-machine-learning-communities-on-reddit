@@ -64,6 +64,7 @@ def main():
     corpus["visible"] = True
     bt_prev = tt.monthly_prevalence(corpus, onehot)
     bt_prev = bt_prev[bt_prev["sample"] == "submitted"].assign(model="BERTopic")
+    bt_prev.round(5).to_csv(common.RESULTS / "a_bertopic_prevalence_monthly.csv", index=False)
 
     nmf_prev = pd.read_csv(common.RESULTS / "a_prevalence_monthly.csv")
     nmf_prev = nmf_prev[nmf_prev["sample"] == "submitted"].assign(model="NMF")

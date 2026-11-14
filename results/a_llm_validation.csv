@@ -1,0 +1,5 @@
+comparison,n,precision,recall,f1,kappa,pred_share,gold_share
+NMF dominant family vs LLM annotator,1992,0.4074,0.3303,0.3648,0.253,0.1355,0.1672
+NMF LLM weight >= 0.3 vs LLM annotator,1992,0.419,0.3964,0.4074,0.2924,0.1581,0.1672
+NMF LLM weight >= 0.5 vs LLM annotator,1992,0.4307,0.2613,0.3252,0.2277,0.1014,0.1672
+BERTopic mapped family vs LLM annotator,1992,0.5617,0.5465,0.554,0.466,0.1627,0.1672

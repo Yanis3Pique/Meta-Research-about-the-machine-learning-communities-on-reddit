@@ -1,0 +1,10 @@
+subreddit,sample,family,n_months,beta_trend,beta_level,p_level,beta_slope,p_slope,pre_mean_pct,last_month,fitted_last_pct,counterfactual_last_pct,gap_pp,r2,q_level,q_slope,max_placebo_abs_level,beats_all_placebos,measure
+MachineLearning,submitted,llm_genai,48,0.00627,0.50463,0.0,-0.00842,0.01928,14.747,2024-12,22.51683,17.802,4.71483,0.9203,0.0,0.02314,0.18599,True,NMF topic family
+deeplearning,submitted,llm_genai,48,-0.00442,0.44898,6e-05,0.00652,0.17508,13.32704,2024-12,19.12208,11.36445,7.75763,0.70257,0.00012,0.17508,0.23539,True,NMF topic family
+learnmachinelearning,submitted,llm_genai,48,0.00209,0.40629,0.0,0.01013,0.0019,9.96643,2024-12,18.69677,10.628,8.06877,0.946,0.0,0.00286,0.12047,True,NMF topic family
+MachineLearning,submitted,llm_genai,48,0.00713,1.11366,0.0,-0.01989,0.00194,11.24009,2024-12,23.34128,14.11693,9.22435,0.93647,0.0,0.00291,0.20472,True,BERTopic family
+deeplearning,submitted,llm_genai,48,-0.00201,1.00995,0.0,-0.00127,0.89003,10.15226,2024-12,20.37959,8.77936,11.60023,0.79032,0.0,0.89003,0.24029,True,BERTopic family
+learnmachinelearning,submitted,llm_genai,48,0.01043,0.82136,0.0,-0.0093,0.23018,6.82835,2024-12,15.66738,9.34569,6.32169,0.88245,0.0,0.27622,0.24271,True,BERTopic family
+MachineLearning,submitted,llm_genai,48,0.02652,0.92852,0.0,-0.04323,0.0,12.68799,2024-12,24.39064,27.30829,-2.91766,0.92708,0.0,0.0,0.41031,True,Embedding classifier (LLM-annotator labels)
+deeplearning,submitted,llm_genai,48,0.00695,0.59452,0.00108,-0.01657,0.12614,15.91751,2024-12,22.54696,19.55522,2.99174,0.60424,0.0013,0.12614,0.47839,True,Embedding classifier (LLM-annotator labels)
+learnmachinelearning,submitted,llm_genai,48,0.01818,0.71992,0.0,-0.01833,0.00081,7.75958,2024-12,17.22859,13.80898,3.41961,0.93371,0.0,0.00121,0.09794,True,Embedding classifier (LLM-annotator labels)

@@ -215,6 +215,17 @@ LocalLLaMA has no pre-period → no ITS. Report its topic profile in 2023 vs. 20
 - Classic DL & vision decline beats placebos under both models in r/ML and r/DL.
 - Model-dependent (don't claim): research, generic, compute, learning & career in r/DL.
 
+**LLM-annotator validation (14 Nov 2026, scripts 60, 61; Qwen3.6-27B IQ4_XS via llama.cpp on the GPU server):**
+- 1,992 titles, random within subreddit × year (166 per cell, 3 historical subreddits). Labels: `llm_genai` (yes/no) and `post_type`. Temperature 0, thinking off, JSON-schema output. 0 errors, 26 min. **The annotator itself still needs checking against the 200 hand labels** (`processed/hand_labels.csv`).
+- **Post-level agreement with the annotator is weak for NMF** (LLM family weight ≥ 0.3: F1 0.41, κ 0.29) and moderate for BERTopic (F1 0.55, κ 0.47). NMF topics mix LLM and non-LLM posts: e.g. t06 holds image *generation* next to classification, and t19 holds LLM *fine-tuning* next to GPUs. No regrouping of NMF topics goes above F1 0.44.
+- **Fix: distil the annotator into an embedding classifier.** Logistic regression on Qwen3-Embedding-4B embeddings, trained on the 1,992 labels: 5-fold CV F1 0.82, κ 0.79 (0.6B embeddings: F1 0.78). Applied to all 224k posts → `processed/llm_pred.parquet`.
+- **Consequence for B (engagement) and D (excluding LLM posts):** use the classifier's post-level labels, not NMF's dominant topic, whenever a single post is classified.
+- **H1 holds under all three measures** (NMF, BERTopic, classifier): the level jump at ChatGPT beats every placebo in all 3 subreddits (`a_its_three_measures.csv`, `fig_a_llm_three_measures.png`).
+- **New pattern: a 2023 hype peak.** Classifier and BERTopic show r/ML and r/DL peaking around Mar–Aug 2023 (~35–38%), then falling back to ~22–25% by 2024. r/learnML rises steadily instead. Annotator shares per subreddit-year agree: r/ML 6.6 → 10.8 → 36.1 → 18.1%.
+- **Caveat on the gap measure:** the classifier picks up generative-AI content *before* ChatGPT (Stable Diffusion, 2022), so its pre-trend is steeper. Extrapolating that trend overshoots, and the Dec 2024 "gap" turns negative in r/ML (−2.9 pp). Report the **level jump** (robust under all measures) and describe the post-2023 decline; don't lean on a single gap number.
+- Post types (annotator): r/learnML questions rise 40% → 59% (2021 → 2024) while "resource" posts fall 29% → 15%. Worth a sentence; check with the hand labels.
+- Data issue found: titles like `[ Removed by Reddit ]` (spaces inside the brackets) get past the placeholder filter in `build_corpus.py`. Fix before the final run.
+
 ---
 
 ## 3. Angle F — Link sources

@@ -1,0 +1,13 @@
+subreddit,year,career,discussion,news,other,project,question,research,resource
+MachineLearning,2021,5.4,10.2,5.4,6.0,15.1,40.4,5.4,12.0
+MachineLearning,2022,6.6,10.8,3.6,6.6,9.6,41.6,7.8,13.3
+MachineLearning,2023,6.6,7.8,7.2,1.8,12.0,39.8,9.6,15.1
+MachineLearning,2024,7.8,9.6,3.0,6.0,13.9,42.2,4.8,12.7
+deeplearning,2021,3.6,3.6,10.2,1.8,8.4,41.0,8.4,22.9
+deeplearning,2022,1.8,4.8,3.6,9.6,10.2,41.0,7.2,21.7
+deeplearning,2023,4.8,6.0,7.8,10.2,15.7,32.5,3.6,19.3
+deeplearning,2024,6.0,7.8,1.2,6.0,8.4,47.6,3.6,19.3
+learnmachinelearning,2021,6.6,4.8,1.8,5.4,9.6,39.8,3.0,28.9
+learnmachinelearning,2022,7.2,4.2,1.2,1.2,7.2,44.6,0.6,33.7
+learnmachinelearning,2023,6.6,7.2,2.4,6.0,4.2,48.8,2.4,22.3
+learnmachinelearning,2024,9.6,5.4,2.4,1.8,6.0,59.0,0.6,15.1

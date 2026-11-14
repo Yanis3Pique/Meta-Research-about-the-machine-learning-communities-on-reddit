@@ -1,0 +1,13 @@
+subreddit,year,n,llm_annotator,nmf_dominant,nmf_mean_weight,bertopic
+MachineLearning,2021,166.0,6.63,10.84,13.07,10.84
+MachineLearning,2022,166.0,10.84,10.24,14.65,12.65
+MachineLearning,2023,166.0,36.14,22.89,23.34,25.9
+MachineLearning,2024,166.0,18.07,16.87,20.82,21.08
+deeplearning,2021,166.0,8.43,12.65,14.2,9.04
+deeplearning,2022,166.0,14.46,10.24,12.53,9.64
+deeplearning,2023,166.0,33.13,21.08,21.7,32.53
+deeplearning,2024,166.0,18.67,16.27,18.19,22.89
+learnmachinelearning,2021,166.0,4.82,6.63,9.37,6.63
+learnmachinelearning,2022,166.0,7.83,7.23,9.63,8.43
+learnmachinelearning,2023,166.0,18.07,9.64,12.63,16.27
+learnmachinelearning,2024,166.0,23.49,18.07,19.56,19.28
