@@ -106,7 +106,7 @@ def design(months, break_month):
     X = pd.DataFrame({
         "trend": month_idx,
         "post": (month_idx >= b_idx).astype(int),
-        "t_since": np.maximum(0, month_idx - b_idx + 1) * (month_idx >= b_idx),
+        "t_since": np.maximum(0, month_idx - b_idx) * (month_idx >= b_idx),
         "academic_term": np.isin(idx.month, [2, 3, 4, 5, 9, 10, 11, 12]).astype(int),
         "blackout": (idx.strftime("%Y-%m") == "2023-06").astype(int),
     }, index=months)

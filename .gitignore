@@ -35,3 +35,25 @@ env/
 # Large serialized models
 *.pkl
 *.joblib
+
+# Historical Task F experiments and backups
+archive/
+*.backup_*.csv
+*.pre_adjudication_*.csv
+
+# Large generated arrays and datasets
+*.npy
+*.parquet
+
+# Temporary classification worklists
+results/f_95_*.csv
+results/f_domain_ai_proposals_old_*.csv
+results/f_domain_review_queue.csv
+results/f_domains_mapping_priority.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Intermediate Task F classification data
+results/f_domain_ai_proposals_work.csv

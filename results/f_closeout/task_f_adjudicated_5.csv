@@ -1,0 +1,6 @@
+rank,domain,posts,sample_url_1,reviewer_A,reviewer_B,adjudicated_category,adjudication_note
+68,spotify.com,80,https://open.spotify.com/show/3f19OvcbN05f9r9DUY15tk,company/product,other,other,"Audio streaming platform links (podcasts/playlists), consistent with media/utility platforms under other rather than corporate product pages."
+86,lmsys.org,65,https://chat.lmsys.org/,academic,models/hubs,models/hubs,"Sample URLs point directly to Chatbot Arena (chat.lmsys.org) and Vicuna/Koala model releases, functioning primarily as an interactive model hub/arena."
+88,qualtrics.com,64,https://livpsych.eu.qualtrics.com/jfe/form/SV_eCCHeVzRvR78goC?fbclid=IwAR0efuUyzkOGURdWU6hZEU20icoQQ4iAiXiKBa27oi8U_Xta4z9RobR0HSw,company/product,other,company/product,Commercial enterprise survey software product used to host questionnaires.
+90,pcpartpicker.com,63,https://pcpartpicker.com/list/Kdvxfv,company/product,other,company/product,Commercial PC hardware comparison and build configuration tool/platform.
+97,producthunt.com,55,https://www.producthunt.com/posts/flashml-2,company/product,social,social,"Community-driven product launch, upvoting, and discussion platform."

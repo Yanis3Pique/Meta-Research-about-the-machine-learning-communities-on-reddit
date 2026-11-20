@@ -1,0 +1,13 @@
+subreddit,period,metric,mapped,unmapped,total,coverage_pct
+LocalLLaMA,all,fully_mapped_posts,16166,253,16419,98.4591
+LocalLLaMA,post,fully_mapped_posts,16166,253,16419,98.4591
+LocalLLaMA,pre,fully_mapped_posts,0,0,0,
+MachineLearning,all,fully_mapped_posts,26341,1770,28111,93.70353
+MachineLearning,post,fully_mapped_posts,13899,536,14435,96.2868
+MachineLearning,pre,fully_mapped_posts,12442,1234,13676,90.97689
+deeplearning,all,fully_mapped_posts,8136,343,8479,95.95471
+deeplearning,post,fully_mapped_posts,3905,188,4093,95.40679
+deeplearning,pre,fully_mapped_posts,4231,155,4386,96.46603
+learnmachinelearning,all,fully_mapped_posts,18902,1200,20102,94.03044
+learnmachinelearning,post,fully_mapped_posts,9554,646,10200,93.66667
+learnmachinelearning,pre,fully_mapped_posts,9348,554,9902,94.40517

@@ -1,0 +1,30 @@
+{
+  "git_commit": "a2554760d536e71ef2ac85d0652a2c0f1e3d1cc5",
+  "script_sha256": "0838a07ff3852bfdabb31d925cce451449e89f38fd5fb0391aea873f8d7bcdfb",
+  "taxonomy_sha256": "6638a4163c97657a00030763b0b90efe2f7446f41c1171d61714e88c50ce2830",
+  "corpus_sha256": "533f7b3e2efb76241624a27f79ba5a4da6126d594b650a7c89ae22c8615f42f7",
+  "package_versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.10.8",
+    "tldextract": "5.4.0"
+  },
+  "n_posts": 224300,
+  "n_taxonomy_domains": 132,
+  "min_monthly_link_posts": 100,
+  "placebo_months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05"
+  ]
+}

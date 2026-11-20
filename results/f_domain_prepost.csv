@@ -1,0 +1,13 @@
+subreddit,domain,pct_of_all_posts_post,pct_of_all_posts_pre,pct_of_link_posts_post,pct_of_link_posts_pre,pct_of_all_posts_change_pp,pct_of_link_posts_change_pp
+LocalLLaMA,arxiv.org,1.6851,,4.87033,,,
+LocalLLaMA,github.com,8.12428,,23.48107,,,
+LocalLLaMA,huggingface.co,6.30016,,18.20894,,,
+MachineLearning,arxiv.org,2.95862,4.68949,13.3735,15.10565,-1.73087,-1.73215
+MachineLearning,github.com,3.94533,4.85745,17.83364,15.64671,-0.91212,2.18694
+MachineLearning,huggingface.co,0.70327,0.31778,3.17889,1.02362,0.38549,2.15527
+deeplearning,arxiv.org,1.70064,5.08038,3.81139,9.43912,-3.37973,-5.62774
+deeplearning,github.com,5.12373,6.12345,11.48302,11.37711,-0.99972,0.10591
+deeplearning,huggingface.co,0.57778,0.18407,1.29489,0.342,0.39371,0.9529
+learnmachinelearning,arxiv.org,0.76612,1.12799,2.11765,2.50429,-0.36187,-0.38664
+learnmachinelearning,github.com,4.02213,3.87519,11.11765,8.60345,0.14694,2.51419
+learnmachinelearning,huggingface.co,0.59232,0.23197,1.63725,0.515,0.36036,1.12226
